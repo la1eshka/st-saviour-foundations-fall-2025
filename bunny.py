@@ -10,7 +10,7 @@ class Bunny:
     def horrible_accident(self) -> str:
         if self.legs <= 0:
            return f'You\'ve broken all your legs!'
-        else :
+        else:
           self.legs -= 1
           return f'{self.name} the {self.color} bunny was in a horrible accident and now has {self.legs} legs left!'
         
@@ -21,4 +21,5 @@ if __name__ == '__main__':
    bugs = Bunny('Bugs', True, 'gray and white')
    print(bugs.horrible_accident())
 
-   
+   blanco = Bunny('Blanco', True, 'black')
+   print(blanco.horrible_accident())
